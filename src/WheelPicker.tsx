@@ -1,15 +1,15 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import {
+  Animated,
+  FlatList,
+  FlatListProps,
+  NativeScrollEvent,
+  NativeSyntheticEvent,
   StyleProp,
   TextStyle,
-  NativeSyntheticEvent,
-  NativeScrollEvent,
-  Animated,
-  ViewStyle,
   View,
   ViewProps,
-  FlatListProps,
-  FlatList,
+  ViewStyle,
 } from 'react-native';
 import styles from './WheelPicker.styles';
 import WheelPickerItem from './WheelPickerItem';
@@ -19,7 +19,7 @@ interface Props {
   options: string[];
   onChange: (index: number) => void;
   selectedIndicatorStyle?: StyleProp<ViewStyle>;
-  itemTextStyle?: TextStyle;
+  itemTextStyle?: TextStyle | any;
   itemStyle?: ViewStyle;
   itemHeight?: number;
   containerStyle?: ViewStyle;
