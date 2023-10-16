@@ -21,7 +21,7 @@
   "scripts": {
     "build": "tsc --skipLibCheck",
     "lint": "eslint ./src --ext .js,.ts,.tsx",
-    "prepare": "yarn build"
+    "prepare": "npm run build"
   },
   "devDependencies": {
     "@types/react": "^17.0.40",
